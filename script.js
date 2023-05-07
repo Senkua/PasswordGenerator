@@ -5,7 +5,6 @@ var length = Number(prompt("Enter a password length between 8 and 128"))
 charType = prompt("Enter a character type: special, numeric, uppercase, lowercase."),
 password = generatePassword(); 
 document.getElementById("display").value= password;
-document.getElementById('copy-btn').addEventListener('click', copypassword);
 
 //Password Generation Characters
 
@@ -27,11 +26,7 @@ for (var i = 0; i < length; i++) {
 return retVal;
 }
 //To make the password value appear in the box
-function copyPassword() {
-  document.getElementById("display").select();
-  document.execCommand("Copy");
-  alert("Password copied to clipboard!");
-}
+document.getElementById("display").select();
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
