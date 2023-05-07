@@ -1,18 +1,37 @@
 // Assignment code here
+
+//Prompts to determine the password generation
 var length = Number(prompt("Enter a password length between 8 and 128"))
 charType = prompt("Enter a character type: special, numeric, uppercase, lowercase."),
 password = generatePassword(); 
 document.getElementById("display").value= password;
 document.getElementById('copy-btn').addEventListener('click', copypassword);
 
+//Password Generation Characters
+
 function generatePassword() {
-  var charsets = {
+  var charSet = {
     lowercase: 'abcdefghijklmnopqrstuvwxyz',
     uppercase: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
     numeric: '0123456789',
-    special: ' !"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~' };
+    special: ' !"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~' 
+  };
 
+//The setup to return the solution value (the return val)
 
+var charSet = charSets[charType.toLowerCase()] || charSets.lowercase;
+var retVal = "";
+for (var i = 0; i < length; i++) {
+  retVal += charSet.charAt(Math.floor(Math.random() * charSet.length));
+}
+return retVal;
+}
+//To make the password value appear in the box
+function copyPassword() {
+  document.getElementById("display").select();
+  document.execCommand("Copy");
+  alert("Password copied to clipboard!");
+}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -25,6 +44,3 @@ function writePassword() {
   passwordText.value = password;
 
 }
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
