@@ -9,6 +9,9 @@ Provide a short description explaining the what, why, and how of your project. U
 - It helps with anyone that needs a random password generated, perhaps of a specific length in a certain character type.
 - I learnt more about javascript and the forloop as well as more in depth on variables.
 
+
+Deployed Application: https://senkua.github.io/PasswordGenerator/
+
 ## Installation
 
 N/A
@@ -19,14 +22,14 @@ Upon visiting the Password Generator site, you should be greeted with a interfac
 
 ![button saying generate password and a box in which it will be inputted](assets/images/Screenshot1.png)
 
-After which, to generate your password, click on the button labeled "Generate Password", upon doing so you will be promted with the following question. "How many characters? 8-120"
+After which, to generate your password, click on the button labeled "Generate Password", upon doing so you will be prompted with the following question. "How many characters? 8-120"
 
 ![Prompt asking how long you'd like your password](assets/images/Screenshot2.png)
 
 
 After inputting a number between 8 and 128 , you will be prompted again for what kind of character type you'd like your password to be, you may choose between "special, numeric, lowercase,uppercase".
 
-![Prompt asking what character type you'd like](assets\images\Screenshot3.png)
+![Prompt asking what character type you'd like](assets/images/Screenshot3.png)
 
 After the previous steps, you will then see your password inputted in the box with the length and type you requested!
 
