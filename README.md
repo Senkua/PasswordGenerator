@@ -40,6 +40,9 @@ After the previous steps, you will then see your password inputted in the box wi
 For this project I found a source on stack overflow that greatly helped me with the layout and the idea of how to do it all. Although I had to clean it up in the end and fix it to my needs as well.
 https://stackoverflow.com/questions/62627469/random-password-generator-with-prompts
 
+Starter code was provided from Xandromus on github:
+ https://github.com/coding-boot-camp/friendly-parakeet
+
 
 ## License
 
